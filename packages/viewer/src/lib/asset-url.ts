@@ -1,6 +1,6 @@
 import { loadAssetUrl } from '@pascal-app/core'
 
-export const ASSETS_CDN_URL = 'https://editor.pascal.app'
+export const ASSETS_CDN_URL = 'http://localhost:3000/'
 
 /**
  * Resolves an asset URL to the appropriate format:

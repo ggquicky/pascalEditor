@@ -36,6 +36,11 @@ const Viewer: React.FC<ViewerProps> = ({ children, selectionManager = 'default' 
         await renderer.init()
         renderer.toneMapping = THREE.ACESFilmicToneMapping
         renderer.toneMappingExposure = 0.9
+         if (renderer.isWebGPURenderer) {
+                  console.log('⚡ Browser supports WebGPU');
+                } else {
+                  console.warn('🌐 WebGPU not found, falling back to WebGL 2');
+                }
         return renderer
       }}
       shadows={{

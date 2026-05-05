@@ -1,0 +1,67 @@
+{
+  "name": "@pascal/editor",
+  "version": "1.0.0",
+  "description": "Unified 3D building editor library",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && tsc --emitDeclarationOnly",
+    "preview": "vite preview",
+    "check-types": "tsc --noEmit",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "peerDependencies": {
+    "@react-three/drei": "^10",
+    "@react-three/fiber": "^9",
+    "react": "^18 || ^19",
+    "react-dom": "^18 || ^19",
+    "three": "^0.182"
+  },
+  "dependencies": {
+    "@pascal-app/core": "*",
+    "@pascal-app/viewer": "*",
+    "@repo/ui": "*",
+    "axios": "^1.7.9",
+    "dedent": "^1.7.1",
+    "idb-keyval": "^6.2.2",
+    "mitt": "^3.0.1",
+    "nanoid": "^5.1.6",
+    "three-bvh-csg": "^0.0.17",
+    "three-mesh-bvh": "^0.9.8",
+    "zod": "^4.3.5",
+    "zundo": "^2.3.0",
+    "zustand": "^5"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^8.4.7",
+    "@storybook/addon-interactions": "^8.4.7",
+    "@storybook/addon-links": "^8.4.7",
+    "@storybook/addon-onboarding": "^8.4.7",
+    "@storybook/blocks": "^8.4.7",
+    "@storybook/react": "^8.4.7",
+    "@storybook/react-vite": "^8.4.7",
+    "@storybook/test": "^8.4.7",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "@types/three": "^0.182.0",
+    "storybook": "^8.4.7",
+    "typescript": "5.9.2",
+    "vite": "^6.0.0",
+    "vite-plugin-dts": "^4.0.0"
+  }
+}
