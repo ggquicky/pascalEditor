@@ -4,8 +4,9 @@ import { initSpaceDetectionSync, initSpatialGridSync, useScene } from '@pascal-a
 import { Viewer } from '@pascal-app/viewer'
 import { useKeyboard } from '@/hooks/use-keyboard'
 import useEditor from '@/store/use-editor'
+import { useEffect } from 'react'
 // import { useProjectScene } from '@/features/community/lib/models/hooks'
-// import { useLocalProjectScene } from '@/features/community/lib/local-storage/hooks'
+import { useLocalProjectScene } from '@/features/community/lib/local-storage/hooks'
 // import { useAuth } from '@/features/community/lib/auth/hooks'
 import { ZoneSystem } from '../systems/zone/zone-system'
 import { ToolManager } from '../tools/tool-manager'
@@ -57,7 +58,7 @@ export default function Editor({ projectId, token, baseUrl }: EditorProps) {
   // Cloud hook activates when there's an activeProject in the store
   // useProjectScene()
   // Local hook activates when projectId is provided and starts with 'local_'
-  // useLocalProjectScene(shouldUseLocal ? projectId : undefined)
+  useLocalProjectScene(shouldUseLocal ? projectId : undefined)
 
   return (
     <div className="w-full h-full">
