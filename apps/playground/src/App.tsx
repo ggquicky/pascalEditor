@@ -1,4 +1,5 @@
 import { Editor } from '@pascal/editor';
+import '@pascal/editor/style.css';
 
 function App() {
   return (

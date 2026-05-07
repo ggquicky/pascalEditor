@@ -92,6 +92,14 @@
   "files": {
     "ignoreUnknown": true,
     "includes": [
+      "src/**/*.ts",
+      "src/**/*.tsx",
+      "src/**/*.js",
+      "src/**/*.jsx",
+      "src/**/*.json",
+      "src/**/*.css",
+      "src/**/*.md",
+      "src/**/*.mdx",
       "packages/**/*.ts",
       "packages/**/*.tsx",
       "packages/**/*.js",
