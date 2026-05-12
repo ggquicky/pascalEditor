@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "target": "es2023",
+    "lib": ["ES2023", "DOM"],
+    "module": "esnext",
+    "types": ["vite/client"],
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@pascal-app/core": ["./src/core/index.ts"],
+      "@pascal-app/core/clone-scene-graph": ["./src/core/utils/clone-scene-graph.ts"],
+      "@pascal-app/core/schema": ["./src/core/schema/index.ts"],
+      "@pascal-app/core/store": ["./src/core/store/use-scene.ts"],
+      "@pascal-app/core/material-library": ["./src/core/material-library.ts"],
+      "@pascal-app/core/spatial-grid": ["./src/core/hooks/spatial-grid/spatial-grid-manager.ts"],
+      "@pascal-app/core/wall": ["./src/core/systems/wall/wall-footprint.ts"],
+      "@pascal-app/core/stair-openings": ["./src/core/systems/stair/stair-opening-sync.ts"],
+      "@pascal-app/core/*": ["./src/core/*"],
+      "@pascal-app/viewer": ["./src/viewer/index.ts"],
+      "@pascal-app/viewer/*": ["./src/viewer/*"],
+      "@pascal-app/editor": ["./src/editor/index.tsx"],
+      "@pascal-app/editor/*": ["./src/editor/*"],
+      "@pascal-app/mcp": ["./src/mcp/index.ts"],
+      "@pascal-app/mcp/*": ["./src/mcp/*"],
+      "next/image": ["./src/next-shims/image.tsx"],
+      "next/link": ["./src/next-shims/link.tsx"],
+      "next/navigation": ["./src/next-shims/navigation.ts"],
+      "next/font/google": ["./src/next-shims/font-google.ts"],
+      "next/font/local": ["./src/next-shims/font-local.ts"],
+      "next/headers": ["./src/next-shims/headers.ts"],
+      "next/script": ["./src/next-shims/script.tsx"]
+    },
+
+    /* Linting */
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "erasableSyntaxOnly": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["src"]
+}

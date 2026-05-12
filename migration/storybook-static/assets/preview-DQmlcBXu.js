@@ -1,0 +1,1 @@
+import{j as r}from"./jsx-runtime-D_zvdyIk.js";import{M as t}from"./chunk-5KNZJZUH-Dpb1lkrS.js";import"./index-C24jMzit.js";import"./_commonjsHelpers-CqkleIqs.js";const c={decorators:[o=>r.jsx(t,{children:r.jsx(o,{})})],parameters:{controls:{matchers:{color:/(background|color)$/i,date:/Date$/i}},layout:"fullscreen"}};export{c as default};
